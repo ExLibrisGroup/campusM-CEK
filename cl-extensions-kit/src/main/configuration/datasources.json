@@ -1,0 +1,22 @@
+{
+  "datasources": [
+    {
+      "connection": {
+        "maxActive": 100,
+        "logAbandoned": true,
+        "username": "<<DB account user name>>",
+        "validationQueryTimeout": -1,
+        "maxWait": 1,
+        "validationQuery": "",
+        "removeAbandoned": true,
+        "driverClassName": "oracle.jdbc.driver.OracleDriver",
+        "defaultAutoCommit": false,
+        "initialSize": 10,
+        "password": "<<DB account password>>",
+        "url": "jdbc:oracle:thin:@il-urmdb03:1521:urm",
+        "removeAbandonedTimeout": 60
+      },
+      "datasourceName": "test"
+    }
+  ]
+}

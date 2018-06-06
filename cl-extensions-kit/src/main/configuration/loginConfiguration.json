@@ -1,0 +1,33 @@
+{
+  "passthruPasswordKey": "argile",
+  "sslPassword": "n/a",
+  "firstNameLdapAttribute": "givenName",
+  "authSecurityAuthentication": "simple",
+  "debugMode": true,
+  "referralProcessor": "throw",
+  "authDNAttribute": "dn",
+  "mailLdapAttribute": "mail",
+  "lastNameLdapAttribute": "sn",
+  "additonalAttributes": [
+    {
+      "ldapAttribute": "department",
+      "displayName": "The department"
+    }
+  ],
+  "authServicePrincipal": "<<Principal>>",
+  "authServerUrl": "<Ldap or ldaps url>>",
+  "bindMethod": "DOUBLE_BIND",
+  "authEmailQuery": "",
+  "startTls": "no",
+  "testPassword": "",
+  "sslCertifcateStore": "n/a",
+  "socketTimeout": "n/a",
+  "testUrl": "/services/CampusMUniversityService/testLogin",
+  "authServicePassword": "<Ldap server passwrod>",
+  "logicalName": "Login (Ldap) Configuration",
+  "authSingleDN": "n/a",
+  "testAccount": "",
+  "fullNameLdapAttribute": "displayName",
+  "authSearchDN": "<<seacrh DN>>",
+  "authUsernameQuery": "(sAMAccountName\u003d{0})"
+}
