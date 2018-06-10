@@ -67,8 +67,8 @@ public class ExampleController {
 	}
 	
 	@PreAuthorize("isAuthenticated()") 	
-	@RequestMapping(value = "getCMAtuhEmployee", method = RequestMethod.GET)
-	public ResponseEntity<Grades> getCMAtuhEmployee(@RequestParam String username, @RequestParam String password) throws Exception {	
+	@RequestMapping(value = "getCMAuthEmployee", method = RequestMethod.GET)
+	public ResponseEntity<Grades> getCMAuthEmployee(@RequestParam String username, @RequestParam String password) throws Exception {	
 		logger.info("start getCMAtuhEmployee");
 		
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
