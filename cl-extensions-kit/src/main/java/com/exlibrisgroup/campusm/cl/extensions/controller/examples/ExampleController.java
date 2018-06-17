@@ -61,7 +61,7 @@ public class ExampleController {
 			grades.setErrorMessage("File not found");
 			return new ResponseEntity<Grades>(grades, HttpStatus.OK);
 		}
-		FillGrades(grades, csvFile);
+		fillGrades(grades, csvFile);
 		       		
 		return new ResponseEntity<Grades>(grades, HttpStatus.OK);
 	}
@@ -87,7 +87,7 @@ public class ExampleController {
 			grades.setErrorMessage("File not found");
 			return new ResponseEntity<Grades>(grades, HttpStatus.OK);
 		}
-		FillGrades(grades, csvFile);
+		fillGrades(grades, csvFile);
 		       		
 		return new ResponseEntity<Grades>(grades, HttpStatus.OK);
 	}
@@ -120,7 +120,7 @@ public class ExampleController {
 			grades.setErrorMessage("File not found");
 			return new ResponseEntity<Grades>(grades, HttpStatus.OK);
 		}
-		FillGrades(grades, csvFile);
+		fillGrades(grades, csvFile);
 		       		
 		return new ResponseEntity<Grades>(grades, HttpStatus.OK);
 	}
@@ -153,7 +153,7 @@ public class ExampleController {
 			grades.setErrorMessage("File not found");
 			return new ResponseEntity<Grades>(grades, HttpStatus.OK);
 		}
-		FillGrades(grades, csvFile);
+		fillGrades(grades, csvFile);
 		       		
 		return new ResponseEntity<Grades>(grades, HttpStatus.OK);
 	}
@@ -194,7 +194,7 @@ public class ExampleController {
 		return path+File.separator+username + ".csv";		
 	}
 	
-	private void FillGrades (Grades grades,String csvFile) throws Exception {
+	private void fillGrades (Grades grades,String csvFile) throws Exception {
 		String line = "";
         List <Grade> listOfGrades = new ArrayList<>();
 
