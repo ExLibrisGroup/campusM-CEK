@@ -33,6 +33,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity security) throws Exception {
 		security.httpBasic().disable();
+		security.csrf().disable();
 		security.addFilter(new CMAuthTokenAuthenticationFilter(authenticationManager(), tokenValidationService));
 		security.addFilter(new LdapAuthenticationFilter(authenticationManager(), ldapValidationService));
 
