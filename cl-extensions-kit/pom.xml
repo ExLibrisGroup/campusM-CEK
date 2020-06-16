@@ -21,7 +21,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.7</java.version>
-		<jackson.version>2.9.5</jackson.version>
+		<jackson.version>2.11.0</jackson.version>
 		<jackson.old.version>1.4.0</jackson.old.version>		
 	</properties>
 
